@@ -11,13 +11,13 @@ import stddraw;
 # y1 = input_to_float(scale_message % "y1")
 
 # The canvas scale points
-x0 = 669905.0
-y0 = 247205.0
-x1 = 1244962.0
-y1 = 490000.0
+x0 = 609905.0
+y0 = 207205.0
+x1 = 1304962.0
+y1 = 600000.0
 
 stddraw.setXscale(x0, x1)
-stddraw.setXscale(y0, y1)
+stddraw.setYscale(y0, y1)
 stddraw.setCanvasSize(1200, 720)
 with open("./usa_cities.txt") as f:
     for p in f:
@@ -25,7 +25,7 @@ with open("./usa_cities.txt") as f:
         points_list = list(filter(lambda x: x != "", text_list))
         point_x = float(points_list[0]),
         point_y = float(points_list[1]),
-        print(points_list[0], point_y[0])
+        print(point_x[0], point_y[0])
         stddraw.point(point_x[0], point_y[0])
 
 stddraw.show()
