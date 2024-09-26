@@ -1,6 +1,5 @@
 #This is a Mont-Carlo simulation
 
-import sys;
 import random;
 
 n = int(input('Please insert the number of matrix values : '))
