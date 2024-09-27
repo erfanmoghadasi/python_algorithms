@@ -1,5 +1,6 @@
+import sys
+sys.path.insert(0,"../modules")
 import stddraw, color;
-
 # def input_to_float(input_message):
 #     input_value = input(input_message)
 #     return float(input_value)
