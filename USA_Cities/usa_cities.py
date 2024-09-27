@@ -1,4 +1,4 @@
-import stddraw;
+import stddraw, color;
 
 # def input_to_float(input_message):
 #     input_value = input(input_message)
@@ -19,13 +19,15 @@ y1 = 600000.0
 stddraw.setXscale(x0, x1)
 stddraw.setYscale(y0, y1)
 stddraw.setCanvasSize(1200, 720)
+stddraw.setPenRadius(0.001)
+stddraw.setPenColor(color.DARK_GRAY)
 with open("./usa_cities.txt") as f:
     for p in f:
         text_list = p.strip().split(" ")
         points_list = list(filter(lambda x: x != "", text_list))
         point_x = float(points_list[0]),
         point_y = float(points_list[1]),
-        print(point_x[0], point_y[0])
         stddraw.point(point_x[0], point_y[0])
+        stddraw.show(0)
 
 stddraw.show()
