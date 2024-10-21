@@ -1,5 +1,5 @@
 
-def bubbleSort(array):
+def bubble_sort(array):
     n = len(array)
     for i in range(0, len(array)):
         flag = False
@@ -11,5 +11,5 @@ def bubbleSort(array):
             break
 
 array = [10, 9, 8, 7, 1, 2, 3, 4]
-bubbleSort(array)
+bubble_sort(array)
 print(array)
